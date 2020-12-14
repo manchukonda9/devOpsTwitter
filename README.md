@@ -1,4 +1,4 @@
-# DevOpsTwitter
+# NuTweets
 
 <details open="open">
   <summary>Table of Contents</summary>
@@ -7,14 +7,13 @@
       <a href="#about-the-project">About The Project</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+    Getting Started
       <ul>
         <li><a href="#single-command-deployement-using-terraform-automation">Single command Deployement using Terraform (Automation)</a></li>
       </ul>
     </li>
     <li><a href="#frontend">FrontEnd</a></li>
     <li><a href="#backend">BackEnd</a></li>
-    <li><a href="#document">Document</a></li>
   </ol>
 </details>
 
