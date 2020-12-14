@@ -1,4 +1,5 @@
 # DevOpsTwitter
+
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
@@ -23,6 +24,7 @@
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details
+  
   
 
 # Single command Deployement using Terraform (Automation)
