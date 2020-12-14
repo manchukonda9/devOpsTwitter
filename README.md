@@ -23,11 +23,9 @@
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
-</details
-  
-  
+</details>
 
- # Single command Deployement using Terraform (Automation)
+# Single command Deployement using Terraform (Automation)
 Pre-requisites
 1. Install Terraform 
 2. Install Kubectl 
