@@ -14,7 +14,6 @@
     </li>
     <li><a href="#frontend">FrontEnd</a></li>
     <li><a href="#backend">BackEnd</a></li>
-    <li><a href="#redis">Redis</a></li>
     <li><a href="#document">Document</a></li>
   </ol>
 </details>
@@ -74,12 +73,21 @@ cloudl-client-service   LoadBalancer   172.20.127.215   a82fad4d0f5f94db4bb46e29
    ```
    
    # FrontEnd
-   
+   Go to the frontend folder:
+   ```
+   cd client
+   npm install
+   npm start 
+   npm eject(after done)
+   ```
    # BackEnd
-   
-   # Redis
-   
-   # Document
+   Go to the backend folder:
+   ```
+   cd server
+   npm install
+   npm start 
+   npm eject(after done)
+   ```
    
    
    
