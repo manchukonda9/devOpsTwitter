@@ -99,7 +99,7 @@ app.get('/',(req,res) => {
             console.log("Queue", reply);
         });
 
-        redisCIient.lpop(['test-key'], function (err, reply) {
+        redisCIient.lpop(['task-key'], function (err, reply) {
          console.log("id", reply);
      });
 
