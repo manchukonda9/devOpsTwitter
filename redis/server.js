@@ -45,6 +45,7 @@ mongoose
 
 mongoose.set("useFindAndModify", false);
 mongoose.Promise = global.Promise;
+let redisCIient;
 if(process.env.RedisURI){
 
 
@@ -71,23 +72,7 @@ if(process.env.RedisURI){
    });
 
 
-   redisClient.rpush(['test-key', "l1"], function (err, reply) {
-      console.log("Queue Length", reply);
-  });
-   
-  redisClient.rpush(['test-key', "l1", "l2"], function (err, reply) {
-   console.log("Queue Length", reply);
-});
-
-
-redisClient.lrange('test-key', 0, 0, function (err, reply) {
-   console.log("Queue result", reply);
-});
-   
-
-redisClient.lrange('test-key', 0, 1, function (err, reply) {
-   console.log("Queue result", reply);
-});
+  
    
    
 }
@@ -109,6 +94,16 @@ app.get('/',(req,res) => {
    var simulateTime = 1000
 
    setTimeout(function(argument){
+      if(redisNotReady){
+         redisCIient.rpush(['task-key', "l1"], function (err, reply) {
+            console.log("Queue", reply);
+        });
+
+        redisCIient.lpop(['test-key'], function (err, reply) {
+         console.log("id", reply);
+     });
+
+      }
       var end = new Date() - start
       histogram.observe(end /1000);},simulateTime
    )
