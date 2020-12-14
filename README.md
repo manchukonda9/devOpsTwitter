@@ -65,15 +65,19 @@ cloudl-client-service   LoadBalancer   172.20.127.215   a82fad4d0f5f94db4bb46e29
   
   Grafana:
   ``` 
-  cd monitoring/Grafana
-  kubectl create -f datasources.yml
+  docker run --rm -p 3000:3000 \
+  -e GF_AUTH_DISABLE_LOGIN_FORM=true \
+  -e GF_AUTH_ANONYMOUS_ENABLED=true \
+  -e GF_AUTH_ANONYMOUS_ORG_ROLE=Admin \
+  -v `pwd`/datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml \
+  grafana/grafana:7.1.5
   
   ```
   Prometheus:
   
   ```
-  cd monitoring/prometheus
-  kubectl create -f prometheus.yml
+  docker build -t my-prometheus
+  docker run -p 9090:9090 my-prometheus
   
   ```
   
