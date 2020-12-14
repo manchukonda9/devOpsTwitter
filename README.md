@@ -14,6 +14,7 @@
     <li><a href="#monitoring">Monitoring</a></li>
     <li><a href="#frontend">FrontEnd</a></li>
     <li><a href="#backend">BackEnd</a></li>
+  <li><a href="#light-house-report">Light House Report</a></li>
   </ol>
 
 # About the Project
