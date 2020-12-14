@@ -1,0 +1,6 @@
+global:
+  scrape_interval: 5s
+scrape_configs:
+  - job_name: "nuTweets"
+    static_configs:
+      - targets: ["a076c9ff53e654845890002295b1829a-1352572691.us-west-2.elb.amazonaws.com:5000"]
