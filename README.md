@@ -12,12 +12,14 @@
         <li><a href="#single-command-deployement-using-terraform-automation">Single command Deployement using Terraform (Automation)</a></li>
       </ul>
     </li>
-    <li><a href="#">FrontEnd</a></li>
-    <li><a href="#usage">BackEnd</a></li>
-    <li><a href="#roadmap">Redis</a></li>
-    <li><a href="#contributing">Project Document</a></li>
+    <li><a href="#frontend">FrontEnd</a></li>
+    <li><a href="#backend">BackEnd</a></li>
+    <li><a href="#redis">Redis</a></li>
+    <li><a href="#document">Document</a></li>
   </ol>
 </details>
+
+# About the Project
 
 # Single command Deployement using Terraform (Automation)
 Pre-requisites
