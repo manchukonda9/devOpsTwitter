@@ -1,6 +1,5 @@
 # NuTweets
 
-<details open="open">
   <summary>Table of Contents</summary>
   <ol>
     <li>
@@ -15,7 +14,6 @@
     <li><a href="#frontend">FrontEnd</a></li>
     <li><a href="#backend">BackEnd</a></li>
   </ol>
-</details>
 
 # About the Project
 
