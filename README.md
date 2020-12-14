@@ -39,4 +39,16 @@ cloudl-client-service   LoadBalancer   172.20.127.215   a82fad4d0f5f94db4bb46e29
   ```
   Copy and paste the EXTERNAL-IP of the load balancer in your browser and the application is ready to use
   
+  # Exiting
+  After finishing the delete all the pods and service with the command:
+  ```
+  kubectl delete daemonsets,replicasets,services,deployments,pods,rc --all
+  
+  ```
+  And destroy the EKS resources on aws using :
+  ```
+  terraform destroy 
+  
+   ```
+  
   
