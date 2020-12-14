@@ -105,7 +105,9 @@ cloudl-client-service   LoadBalancer   172.20.127.215   a82fad4d0f5f94db4bb46e29
    npm start 
    npm eject(after done)
    ```
-   
+   # Light house report
+   open the light house report pdf to check the performance and accessibility of the website.
+   It recorded an excellent performance of 86 and accessibility of 95. 
    
    
   
