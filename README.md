@@ -17,12 +17,15 @@
   </ol>
 
 # About the Project
-User can signup and login into application.
-User can view, tweet, edit and delete the tweets
-User is able to search for tweets using keywords
-Users are restricted from posting any offensive tweets.
-User information such as Login credentials, tweets are stored in MongoDb
-Application is deployed in AWS using kubernetes and terraform.
+User can signup and login into application<br />
+User can view, tweet, edit and delete the tweets<br />
+User is able to search for tweets using keywords<br />
+Users are restricted from posting any offensive tweets<br />
+User information such as Login credentials, tweets are stored in MongoDb<br />
+Application is deployed in AWS using kubernetes and terraform<br />
+Monitered using Prometheus and Grafana<br />
+Application uses terrform for automation<br />
+Horizantal Pod Autoscaling is done<br />
 
 # Single command Deployement using Terraform (Automation)
 Pre-requisites
