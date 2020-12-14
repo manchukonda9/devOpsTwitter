@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: queue
+ namespace: default
+spec:
+ selector:
+  matchLabels:
+   app: queue
+ replicas: 2
+ minReadySeconds: 15
+ strategy:
+  type: RollingUpdate
+  rollingUpdate:
+   maxUnavailable: 1
+   maxSurge: 1
+ template:
+  metadata:
+   labels:
+    app: queue
+  spec:
+   containers:
+    - image: redislabs/rejson:latest
+      imagePullPolicy: Always
+      name: queue
+      ports:
+        - name: http
+          containerPort: 6379
+       
