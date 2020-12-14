@@ -10,23 +10,23 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#single-command-deployement-using-terraform-automation">Single command Deployement using Terraform (Automation)</a></li>
-        <li><a href="#">FrontEnd</a></li>
       </ul>
     </li>
+    <li><a href="#">FrontEnd</a></li>
     <li><a href="#usage">BackEnd</a></li>
     <li><a href="#roadmap">Redis</a></li>
     <li><a href="#contributing">Project Document</a></li>
   </ol>
 </details>
 
-## Single command Deployement using Terraform (Automation)
+# Single command Deployement using Terraform (Automation)
 Pre-requisites
 1. Install Terraform 
 2. Install Kubectl 
 3. Configure aws credentials and provide with correct access policies
 4. Install aws-iam-authenticator so that kubeconfig can be easily done
 
-# Bring up eks on aws
+### Bring up eks on aws
   ```
   $ git clone github.com/manchukonda9/devOpsTwitter.git
   $ cd automation
@@ -34,12 +34,12 @@ Pre-requisites
   $ terraform plan
   $ terraform apply # when provided prompt click on yes
   ```
-# Configure kubectl
+### Configure kubectl
 ```   $  aws eks --region $(terraform output region) update-kubeconfig --name $(terraform output cluster_name) ```
 OR enter the command ``` terraform output kubeconfig ``` and copy the output and paste it in the .kube/config file in your machine
 ```kubectl cluster-info``` enter this command to verify the cluster is up and running
 
-# Deploy pods to the Cluster
+### Deploy pods to the Cluster
 ```
   kubectl create -f cloudl-server-service.yml 
   kubectl create -f cloudl-server-deployment.yml 
@@ -59,7 +59,7 @@ cloudl-client-service   LoadBalancer   172.20.127.215   a82fad4d0f5f94db4bb46e29
   ```
   Copy and paste the EXTERNAL-IP of the load balancer in your browser and the application is ready to use
   
-  # Exiting
+  ### Exiting
   After finishing the delete all the pods and service with the command:
   ```
   kubectl delete daemonsets,replicasets,services,deployments,pods,rc --all
@@ -70,5 +70,16 @@ cloudl-client-service   LoadBalancer   172.20.127.215   a82fad4d0f5f94db4bb46e29
   terraform destroy 
   
    ```
+   
+   # FrontEnd
+   
+   # BackEnd
+   
+   # Redis
+   
+   # Document
+   
+   
+   
   
   
