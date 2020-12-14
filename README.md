@@ -11,6 +11,7 @@
         <li><a href="#single-command-deployement-using-terraform-automation">Single command Deployement using Terraform (Automation)</a></li>
       </ul>
     </li>
+    <li><a href="#monitoring">Monitoring</a></li>
     <li><a href="#frontend">FrontEnd</a></li>
     <li><a href="#backend">BackEnd</a></li>
   </ol>
@@ -45,6 +46,8 @@ OR enter the command ``` terraform output kubeconfig ``` and copy the output and
   kubectl create -f cloudl-redis-deployment.yml 
   kubectl create -f cloudl-client-service.yml 
   kubectl create -f cloudl-client-deployment.yml
+  kubectl create -f hpa.yml
+  kubectl create -f hpa-demo-deployment.yml
   
   kubectl get svc
   
@@ -56,6 +59,23 @@ cloudl-client-service   LoadBalancer   172.20.127.215   a82fad4d0f5f94db4bb46e29
 
   ```
   Copy and paste the EXTERNAL-IP of the load balancer in your browser and the application is ready to use
+  
+  ### Monitoring
+  To monitor the deployment:
+  
+  Grafana:
+  ``` 
+  cd monitoring/Grafana
+  kubectl create -f datasources.yml
+  
+  ```
+  Prometheus:
+  
+  ```
+  cd monitoring/prometheus
+  kubectl create -f prometheus.yml
+  
+  ```
   
   ### Exiting
   After finishing the delete all the pods and service with the command:
