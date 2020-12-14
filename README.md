@@ -17,6 +17,12 @@
   </ol>
 
 # About the Project
+User can signup and login into application.
+User can view, tweet, edit and delete the tweets
+User is able to search for tweets using keywords
+Users are restricted from posting any offensive tweets.
+User information such as Login credentials, tweets are stored in MongoDb
+Application is deployed in AWS using kubernetes and terraform.
 
 # Single command Deployement using Terraform (Automation)
 Pre-requisites
