@@ -1,4 +1,4 @@
-# devOpsTwitter
+# DevOpsTwitter
 # Single command Deployement using Terraform (Automation)
 Pre-requisites
 1. Install Terraform 
