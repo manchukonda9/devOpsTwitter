@@ -23,6 +23,7 @@
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details
+  
 
 # Single command Deployement using Terraform (Automation)
 Pre-requisites
