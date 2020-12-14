@@ -5,6 +5,11 @@ const bodyParser = require("body-parser");
 const passport = require("passport");
 const path = require("path");
 const users = require("./routes/api/users");
+const redis = require("redis");
+let redisNotReady = true;
+
+
+
 
 
 
@@ -40,6 +45,52 @@ mongoose
 
 mongoose.set("useFindAndModify", false);
 mongoose.Promise = global.Promise;
+if(process.env.RedisURI){
+
+
+
+
+
+
+
+// Redis code here
+
+   let redisClient = redis.createClient({
+      host: '127.0.0.1',
+      port: 6379
+   });
+   redisClient.on("error", (err) => {
+     console.log("error", err)
+   });
+   redisClient.on("connect", (err) => {
+      console.log("connect");
+   });
+   redisClient.on("ready", (err) => {
+      redisNotReady = false;
+      console.log("ready");
+   });
+
+
+   redisClient.rpush(['test-key', "l1"], function (err, reply) {
+      console.log("Queue Length", reply);
+  });
+   
+  redisClient.rpush(['test-key', "l1", "l2"], function (err, reply) {
+   console.log("Queue Length", reply);
+});
+
+
+redisClient.lrange('test-key', 0, 0, function (err, reply) {
+   console.log("Queue result", reply);
+});
+   
+
+redisClient.lrange('test-key', 0, 1, function (err, reply) {
+   console.log("Queue result", reply);
+});
+   
+   
+}
 
 app.use(passport.initialize());
 require("./middleware/passport")(passport);
