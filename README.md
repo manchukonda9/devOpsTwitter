@@ -69,7 +69,6 @@ OR enter the command ``` terraform output kubeconfig ``` and copy the output and
   
   ```
   Then u will get the ip address:
-  ```
   NAME                    TYPE           CLUSTER-IP       EXTERNAL-IP                                                               PORT(S)          AGE
 cloudl-client-service   LoadBalancer   172.20.127.215   a82fad4d0f5f94db4bb46e29072aae0a-1101398906.us-west-2.elb.amazonaws.com   80:30213/TCP     35s
 
