@@ -10,6 +10,7 @@
       <ul>
         <li><a href="#single-command-deployement-using-terraform-automation">Single command Deployement using Terraform (Automation)</a></li>
       </ul>
+      <li><a href="http://a6154b83af0b6465f9cc9d0466d66abb-1177565989.us-west-2.elb.amazonaws.com/">Website Link(already deployed)</a></li>
     </li>
     <li><a href="#monitoring">Monitoring</a></li>
     <li><a href="#horizontal-pod-scaling">Horizontal Pod Scaling</a></li>
