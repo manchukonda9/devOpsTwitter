@@ -14,6 +14,7 @@
     </li>
     <li><a href="#monitoring">Monitoring</a></li>
     <li><a href="#horizontal-pod-scaling">Horizontal Pod Scaling</a></li>
+    <li><a href="#progressive-web-application">Progressive web application</a></li>
     <li><a href="#frontend">FrontEnd</a></li>
     <li><a href="#backend">BackEnd</a></li>
   <li><a href="#light-house-report">Light House Report</a></li>
@@ -91,13 +92,16 @@ cloudl-client-service   LoadBalancer   172.20.127.215   a82fad4d0f5f94db4bb46e29
   
   ```
   Prometheus:
-  cd monitoring/prometheus
-  
   ```
+  cd monitoring/prometheus
   docker build -t my-prometheus
   docker run -p 9090:9090 my-prometheus
   
   ```
+  ### Progressive web application
+  You will find a '+' symbol to right of the URL. Cick on it and install the app on to your device. <br/>
+  If you dont find a '+' to the right of the URL bar after going in to the <a href="http://a6154b83af0b6465f9cc9d0466d66abb-1177565989.us-west-2.elb.amazonaws.com/"> deployed website</a>, <br/> go to this URL (chrome://flags/#unsafely-treat-insecure-origin-as-secure)in the chrome browser and enable the "Insecure origins treated as secure" by adding the deployed application's URL in the input field.<br/>
+ Now reload browser and you will see '+' symbol to right of the URL. Cick on it and install the app on to your device. 
   
   
   ### Exiting
