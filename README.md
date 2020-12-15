@@ -12,6 +12,7 @@
       </ul>
     </li>
     <li><a href="#monitoring">Monitoring</a></li>
+    <li><a href="#horizontal-pod-scaling">Horizontal Pod Scaling</a></li>
     <li><a href="#frontend">FrontEnd</a></li>
     <li><a href="#backend">BackEnd</a></li>
   <li><a href="#light-house-report">Light House Report</a></li>
@@ -57,10 +58,14 @@ OR enter the command ``` terraform output kubeconfig ``` and copy the output and
   kubectl create -f cloudl-redis-deployment.yml 
   kubectl create -f cloudl-client-service.yml 
   kubectl create -f cloudl-client-deployment.yml
+  ```
+### Horizontal Pod Scaling
+```
   kubectl create -f hpa.yml
   kubectl create -f hpa-demo-deployment.yml
   
   kubectl get svc
+  ```
   
   ```
   Then u will get the ip address:
@@ -93,6 +98,7 @@ cloudl-client-service   LoadBalancer   172.20.127.215   a82fad4d0f5f94db4bb46e29
   docker run -p 9090:9090 my-prometheus
   
   ```
+  
   
   ### Exiting
   After finishing the delete all the pods and service with the command:
