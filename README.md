@@ -72,8 +72,8 @@ OR enter the command ``` terraform output kubeconfig ``` and copy the output and
   NAME                    TYPE           CLUSTER-IP       EXTERNAL-IP                                                               PORT(S)          AGE
 cloudl-client-service   LoadBalancer   172.20.127.215   a82fad4d0f5f94db4bb46e29072aae0a-1101398906.us-west-2.elb.amazonaws.com   80:30213/TCP     35s
 
-  ```
   Copy and paste the EXTERNAL-IP of the load balancer in your browser and the application is ready to use
+  ```
   
   ### Monitoring
   To monitor the deployment:
@@ -134,7 +134,7 @@ cloudl-client-service   LoadBalancer   172.20.127.215   a82fad4d0f5f94db4bb46e29
    docker-compose up
    ```
    # Light house report
-   Open the light house report pdf to check the performance and accessibility of the website.
+   Open the light house report pdf to check the performance and accessibility of the website.<br />
    It recorded an excellent performance of 86 and accessibility of 95. 
    
    
