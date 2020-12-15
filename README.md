@@ -23,10 +23,11 @@ User can view, tweet, edit and delete the tweets<br />
 User is able to search for tweets using keywords<br />
 Users are restricted from posting any offensive tweets<br />
 User information such as Login credentials, tweets are stored in MongoDb<br />
-Application is deployed in AWS using kubernetes and terraform<br />
+Application is deployed in AWS using kubernetes and terraform(automation)<br />
 Monitered using Prometheus and Grafana<br />
 Application uses terrform for automation<br />
 Horizantal Pod Autoscaling is done<br />
+Progressive web application
 
 # Single command Deployement using Terraform (Automation)
 Pre-requisites
